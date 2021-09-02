@@ -1758,6 +1758,8 @@
 				<true/>
 				<key>Comment</key>
 				<string>OpenShell.efi</string>
+				<key>Flavour</key>
+				<string>OpenShell:UEFIShell:Shell</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Name</key>
@@ -1863,7 +1865,9 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
+			<key>AdviseFeatures</key>
+			<false/>
+			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
 			<string>C020243014N00008C</string>
@@ -1881,8 +1885,6 @@
 			<string>C02CV4ZKP3XY</string>
 			<key>SystemUUID</key>
 			<string>B7151D83-ABC5-4560-8F1A-C45E10BEDAA8</string>
-			<key>MaxBIOSVersion</key>
-			<false/>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
