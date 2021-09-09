@@ -1,5 +1,7 @@
 # Hackintosh Avita-Liber-v14
 
+Opencore version: 0.7.2
+
 macOS version: *11.2.3*
 Processor: *intel i5 10210u*
 Ram: *8gb DDR4*
@@ -14,7 +16,7 @@ What Works:
 6. Bluetooth
 ... mostly everything works
 
-What does no work (should work in the future):
+What does not work (should work in the future):
 1. Brightness keys
 2. Lid status (no automatic sleep when lid is closed)
 3. Hibernation ??!!
