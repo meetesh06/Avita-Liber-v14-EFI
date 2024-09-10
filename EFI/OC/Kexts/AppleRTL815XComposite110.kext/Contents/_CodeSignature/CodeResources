@@ -3,9 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>files</key>
-	<dict/>
+	<dict>
+		<key>Resources/English.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KMQe+aEy0lJbzUSjSbr7Fw4FCG4=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>files2</key>
-	<dict/>
+	<dict>
+		<key>Resources/English.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KMQe+aEy0lJbzUSjSbr7Fw4FCG4=
+			</data>
+			<key>hash2</key>
+			<data>
+			biEsGHeIeC2uFmcFaabuZ7ADzEKTEVmZq9hxdm6pykY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>rules</key>
 	<dict>
 		<key>^Resources/</key>
