@@ -1,7 +1,5 @@
 ## Hackintosh macOS Sonoma : Avita-Liber-v14
 
-I removed the USBMap Kext; strangely things are more stable when not using it. I will stick to not using it...
-
 > Opencore version: 1.0.1
 > macOS version: *14.6.1*
 > Processor: *intel i5 10210u*
