@@ -25,11 +25,17 @@
 		<key>MacBookPro16,3-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
 			<key>IOClass</key>
-			<string>AppleUSBMergeNub</string>
-			<key>IOPathMatch</key>
-			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/XHC@14/XHC@14000000</string>
+			<string>AppleUSBHostMergeProperties</string>
+			<key>IOParentMatch</key>
+			<dict>
+				<key>IOPropertyMatch</key>
+				<dict>
+					<key>pcidebug</key>
+					<string>0:20:0</string>
+				</dict>
+			</dict>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
@@ -38,7 +44,7 @@
 				<true/>
 				<key>port-count</key>
 				<data>
-				CQAAAA==
+				DQAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
@@ -46,7 +52,7 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>9</integer>
-						<key>port</key>
+						<key>#port</key>
 						<data>
 						AQAAAA==
 						</data>
@@ -69,6 +75,15 @@
 						AwAAAA==
 						</data>
 					</dict>
+					<key>HS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>9</integer>
+						<key>#port</key>
+						<data>
+						BAAAAA==
+						</data>
+					</dict>
 					<key>HS05</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -87,7 +102,7 @@
 						BgAAAA==
 						</data>
 					</dict>
-					<key>HS08</key>
+					<key>HS07</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
@@ -96,13 +111,49 @@
 						CAAAAA==
 						</data>
 					</dict>
-					<key>HS09</key>
+					<key>HS08</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
+						<key>#port</key>
+						<data>
+						CgAAAA==
+						</data>
+					</dict>
+					<key>SS01</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>9</integer>
 						<key>port</key>
 						<data>
-						CQAAAA==
+						DQAAAA==
+						</data>
+					</dict>
+					<key>SS02</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>#port</key>
+						<data>
+						DgAAAA==
+						</data>
+					</dict>
+					<key>SS03</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>#port</key>
+						<data>
+						DwAAAA==
+						</data>
+					</dict>
+					<key>SS04</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>9</integer>
+						<key>#port</key>
+						<data>
+						EAAAAA==
 						</data>
 					</dict>
 				</dict>

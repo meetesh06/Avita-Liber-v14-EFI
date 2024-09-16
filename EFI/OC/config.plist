@@ -8,7 +8,7 @@
       <array>
         <dict>
           <key>Comment</key>
-          <string>Core</string>
+          <string>SSDT-AWAC.aml</string>
           <key>Enabled</key>
           <true/>
           <key>Path</key>
@@ -16,89 +16,41 @@
         </dict>
         <dict>
           <key>Comment</key>
-          <string>Battery</string>
+          <string>SSDT-EC-USBX-LAPTOP.aml</string>
           <key>Path</key>
-          <string>SSDT-ACPIBATT.aml</string>
+          <string>SSDT-EC-USBX-LAPTOP.aml</string>
           <key>Enabled</key>
           <true/>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>SSDT-PLUG-DRTNIA.aml</string>
+          <key>Path</key>
+          <string>SSDT-PLUG-DRTNIA.aml</string>
+          <key>Enabled</key>
+          <true/>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>SSDT-PNLF.aml</string>
+          <key>Path</key>
+          <string>SSDT-PNLF.aml</string>
+          <key>Enabled</key>
+          <true/>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string>SSDT-XOSI.aml</string>
+          <key>Enabled</key>
+          <true/>
+          <key>Path</key>
+          <string>SSDT-XOSI.aml</string>
         </dict>
         <dict>
           <key>Comment</key>
           <string>Trackpad</string>
           <key>Path</key>
           <string>SSDT-GPIO.aml</string>
-          <key>Enabled</key>
-          <true/>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>Core</string>
-          <key>Path</key>
-          <string>SSDT-RHUB.aml</string>
-          <key>Enabled</key>
-          <true/>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>Null Ethernet</string>
-          <key>Path</key>
-          <string>ssdt-rmne.aml</string>
-          <key>Enabled</key>
-          <false/>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>SSDT-USBX.aml</string>
-          <key>Path</key>
-          <string>SSDT-USBX.aml</string>
-          <key>Enabled</key>
-          <true/>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>SSDT-XOSI.aml</string>
-          <key>Path</key>
-          <string>SSDT-XOSI.aml</string>
-          <key>Enabled</key>
-          <true/>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>SSDT-PNLF.aml</string>
-          <key>Path</key>
-          <string>SSDT-PNLF.aml</string>
-          <key>Enabled</key>
-          <true/>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>SSDT-SBUS-MCHC.aml</string>
-          <key>Path</key>
-          <string>SSDT-SBUS-MCHC.aml</string>
-          <key>Enabled</key>
-          <true/>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>HPET _CRS (Needs _CRS to XCRS Rename)</string>
-          <key>Enabled</key>
-          <true/>
-          <key>Path</key>
-          <string>SSDT-HPET.aml</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>SSDT to disable USB RHUB/HUBN/URTH and rename devices</string>
-          <key>Enabled</key>
-          <true/>
-          <key>Path</key>
-          <string>SSDT-USB-Reset.aml</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>ssdt_data.aml</string>
-          <key>Path</key>
-          <string>ssdt_data.aml</string>
           <key>Enabled</key>
           <true/>
         </dict>
@@ -138,36 +90,6 @@
       <array>
         <dict>
           <key>Comment</key>
-          <string>_CRS to XCRS - GPIO</string>
-          <key>Count</key>
-          <integer>1</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>X0NSUw==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WENSUw==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>78</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data/>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
           <string>Rename Method _OSI to XOSI</string>
           <key>Count</key>
           <integer>0</integer>
@@ -198,6 +120,36 @@
         </dict>
         <dict>
           <key>Comment</key>
+          <string>_CRS to XCRS - GPIO</string>
+          <key>Count</key>
+          <integer>1</integer>
+          <key>Enabled</key>
+          <true/>
+          <key>Find</key>
+          <data>X0NSUw==</data>
+          <key>Limit</key>
+          <integer>0</integer>
+          <key>Mask</key>
+          <data/>
+          <key>OemTableId</key>
+          <data/>
+          <key>Replace</key>
+          <data>WENSUw==</data>
+          <key>ReplaceMask</key>
+          <data/>
+          <key>Skip</key>
+          <integer>78</integer>
+          <key>TableLength</key>
+          <integer>0</integer>
+          <key>TableSignature</key>
+          <data/>
+          <key>Base</key>
+          <string/>
+          <key>BaseSkip</key>
+          <integer>0</integer>
+        </dict>
+        <dict>
+          <key>Comment</key>
           <string>Rename Method _INI to XINI - GPIO</string>
           <key>Count</key>
           <integer>1</integer>
@@ -217,456 +169,6 @@
           <data/>
           <key>Skip</key>
           <integer>56</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>RFNEVA==</data>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>_BIF to XBIF - ACPIBATT</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>X0JJRg==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WEJJRg==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>RFNEVA==</data>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>_BST to XBST - ACPIBATT</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>X0JTVA==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WEJTVA==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>RFNEVA==</data>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>EC REGION FIX _REG TO XREG - ACPIBATT</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>X1JFRw==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WFJFRw==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>RFNEVA==</data>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>H_EC to EC__ - WARNING</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>SF9FQw==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>RUNfXw==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>RFNEVA==</data>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>_STA to ZSTA for BAT0  - ACPIBATT</string>
-          <key>Count</key>
-          <integer>1</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>X1NUQQ==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WlNUQQ==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>195</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>RFNEVA==</data>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>ECRD to XCRD  - ACPIBATT - DO NOT</string>
-          <key>Count</key>
-          <integer>1</integer>
-          <key>Enabled</key>
-          <false/>
-          <key>Find</key>
-          <data>RUNSRA==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WENSRA==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>RFNEVA==</data>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>DEBUG _QA0 -&gt; XQA0</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <false/>
-          <key>Find</key>
-          <data>X1FBMA==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WFFBMA==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data/>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>DEBUG _Q0B -&gt; XQ0B</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <false/>
-          <key>Find</key>
-          <data>X1EwQg==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WFEwQg==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data/>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>DEBUG _Q0C -&gt; XQ0C</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <false/>
-          <key>Find</key>
-          <data>X1EwQw==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WFEwQw==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data/>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>DEBUG _Q0D -&gt; XQ0D</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <false/>
-          <key>Find</key>
-          <data>X1EwRA==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WFEwRA==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data/>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-          <key>Comment</key>
-          <string>HPET _CRS to XCRS Rename</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>JV9DUlM=</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data>AAAAAA==</data>
-          <key>Replace</key>
-          <data>JVhDUlM=</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>AAAAAA==</data>
-        </dict>
-        <dict>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-          <key>Comment</key>
-          <string>RTC IRQ 8 Patch</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>IgABeQA=</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data>AAAAAA==</data>
-          <key>Replace</key>
-          <data>IgAAeQA=</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>AAAAAA==</data>
-        </dict>
-        <dict>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-          <key>Comment</key>
-          <string>TIMR IRQ 0 Patch</string>
-          <key>Count</key>
-          <integer>0</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>IgEAeQA=</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data>AAAAAA==</data>
-          <key>Replace</key>
-          <data>IgAAeQA=</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>AAAAAA==</data>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>_LID to XLID  - ACPIBATT LID FIX</string>
-          <key>Count</key>
-          <integer>1</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>X0xJRA==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WExJRA==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>0</integer>
-          <key>TableLength</key>
-          <integer>0</integer>
-          <key>TableSignature</key>
-          <data>RFNEVA==</data>
-          <key>Base</key>
-          <string/>
-          <key>BaseSkip</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string>_STA to ZSTA for LID0  - ACPIBATT</string>
-          <key>Count</key>
-          <integer>1</integer>
-          <key>Enabled</key>
-          <true/>
-          <key>Find</key>
-          <data>X1NUQQ==</data>
-          <key>Limit</key>
-          <integer>0</integer>
-          <key>Mask</key>
-          <data/>
-          <key>OemTableId</key>
-          <data/>
-          <key>Replace</key>
-          <data>WlNUQQ==</data>
-          <key>ReplaceMask</key>
-          <data/>
-          <key>Skip</key>
-          <integer>197</integer>
           <key>TableLength</key>
           <integer>0</integer>
           <key>TableSignature</key>
@@ -1189,24 +691,6 @@
           <key>PlistPath</key>
           <string>Contents/Info.plist</string>
           <key>Enabled</key>
-          <false/>
-          <key>MinKernel</key>
-          <string/>
-          <key>ExecutablePath</key>
-          <string>Contents/MacOS/NullEthernet</string>
-          <key>Arch</key>
-          <string>Any</string>
-          <key>BundlePath</key>
-          <string>NullEthernet.kext</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string/>
-          <key>MaxKernel</key>
-          <string/>
-          <key>PlistPath</key>
-          <string>Contents/Info.plist</string>
-          <key>Enabled</key>
           <true/>
           <key>MinKernel</key>
           <string/>
@@ -1225,123 +709,33 @@
           <key>PlistPath</key>
           <string>Contents/Info.plist</string>
           <key>Enabled</key>
-          <false/>
+          <true/>
           <key>MinKernel</key>
           <string/>
           <key>ExecutablePath</key>
-          <string/>
+          <string>Contents/MacOS/ECEnabler</string>
+          <key>Arch</key>
+          <string>Any</string>
+          <key>BundlePath</key>
+          <string>ECEnabler.kext</string>
+        </dict>
+        <dict>
+          <key>Comment</key>
+          <string></string>
+          <key>MaxKernel</key>
+          <string></string>
+          <key>PlistPath</key>
+          <string>Contents/Info.plist</string>
+          <key>Enabled</key>
+          <true/>
+          <key>MinKernel</key>
+          <string></string>
+          <key>ExecutablePath</key>
+          <string></string>
           <key>Arch</key>
           <string>Any</string>
           <key>BundlePath</key>
           <string>USBMap.kext</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string/>
-          <key>MaxKernel</key>
-          <string/>
-          <key>PlistPath</key>
-          <string>Contents/Info.plist</string>
-          <key>Enabled</key>
-          <false/>
-          <key>MinKernel</key>
-          <string/>
-          <key>ExecutablePath</key>
-          <string>Contents/MacOS/BrightnessKeys</string>
-          <key>Arch</key>
-          <string>Any</string>
-          <key>BundlePath</key>
-          <string>BrightnessKeys.kext</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string/>
-          <key>MaxKernel</key>
-          <string/>
-          <key>PlistPath</key>
-          <string>Contents/Info.plist</string>
-          <key>Enabled</key>
-          <false/>
-          <key>MinKernel</key>
-          <string/>
-          <key>ExecutablePath</key>
-          <string/>
-          <key>Arch</key>
-          <string>Any</string>
-          <key>BundlePath</key>
-          <string>BrcmBluetoothInjector.kext</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string/>
-          <key>MaxKernel</key>
-          <string/>
-          <key>PlistPath</key>
-          <string>Contents/Info.plist</string>
-          <key>Enabled</key>
-          <false/>
-          <key>MinKernel</key>
-          <string/>
-          <key>ExecutablePath</key>
-          <string>Contents/MacOS/BrcmFirmwareData</string>
-          <key>Arch</key>
-          <string>Any</string>
-          <key>BundlePath</key>
-          <string>BrcmFirmwareData.kext</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string/>
-          <key>MaxKernel</key>
-          <string/>
-          <key>PlistPath</key>
-          <string>Contents/Info.plist</string>
-          <key>Enabled</key>
-          <false/>
-          <key>MinKernel</key>
-          <string/>
-          <key>ExecutablePath</key>
-          <string>Contents/MacOS/BrcmPatchRAM3</string>
-          <key>Arch</key>
-          <string>Any</string>
-          <key>BundlePath</key>
-          <string>BrcmPatchRAM3.kext</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string/>
-          <key>MaxKernel</key>
-          <string/>
-          <key>PlistPath</key>
-          <string>Contents/Info.plist</string>
-          <key>Enabled</key>
-          <false/>
-          <key>MinKernel</key>
-          <string/>
-          <key>ExecutablePath</key>
-          <string>Contents/MacOS/CPUFriend</string>
-          <key>Arch</key>
-          <string>Any</string>
-          <key>BundlePath</key>
-          <string>CPUFriend.kext</string>
-        </dict>
-        <dict>
-          <key>Comment</key>
-          <string/>
-          <key>MaxKernel</key>
-          <string/>
-          <key>PlistPath</key>
-          <string>Contents/Info.plist</string>
-          <key>Enabled</key>
-          <false/>
-          <key>MinKernel</key>
-          <string/>
-          <key>ExecutablePath</key>
-          <string/>
-          <key>Arch</key>
-          <string>Any</string>
-          <key>BundlePath</key>
-          <string>CPUFriendDataProvider.kext</string>
         </dict>
       </array>
       <key>Block</key>
@@ -1907,7 +1301,7 @@
         <key>MaxBIOSVersion</key>
         <false/>
         <key>MLB</key>
-        <string>C020243014N00008C</string>
+        <string>C02012701QX0000A8</string>
         <key>ProcessorType</key>
         <integer>0</integer>
         <key>ROM</key>
@@ -1919,9 +1313,9 @@
         <key>SystemProductName</key>
         <string>MacBookPro16,3</string>
         <key>SystemSerialNumber</key>
-        <string>C02CV4ZKP3XY</string>
+        <string>C02CGXZEP3XY</string>
         <key>SystemUUID</key>
-        <string>B7151D83-ABC5-4560-8F1A-C45E10BEDAA8</string>
+        <string>1D8FF9F0-913B-416E-B474-F9DD66D9B420</string>
       </dict>
       <key>UpdateDataHub</key>
       <true/>
